@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Box model</title>
+
+    <!-- 내부 스타일시트 적용 -->
+    <style>
+        /* 이 영역 안에서는 css 문법으로 작성 */
+        
+        p.border {
+            /* 경계선 스타일 : 경계선 width 지정이 없으면 기본 3px */
+            border-style: dotted;
+            /* 경계선의 스타일을 top,bottom,left,right 따로지정가능 */
+            border-top-style: solid;
+            /* 경계선의 폭(너비) : px, thick, medium, thin */
+            border-width: 5px;
+            border-left-width: thin;
+            /* 경계선 색상 */
+            border-color: red;
+            border-bottom-color: blue;
+            /* 모서리를 둥글게 */
+            border-radius: 20px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 0px;
+            /* 경계선 이미지 */
+            /* 경계선의 너비가 이미즐 보여줄 정도여야 함. */
+            /* 축약형 */
+            border: 30px solid transparent;
+            border-image-source: url('./border.png');
+            /* 높이, 너비 */
+            border-image-slice: 30 30;
+            border-image-repeat: round;
+            /* 요소 크기 */
+            width: 70%;
+            height: 200%;
+            /* 높이값은 %가 안됨. why? 부모 사이즈가 정해져있지 않아서 */
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 경계선 border / 요소 크기 / 중앙 정렬 -->
+    <p class="border">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum quisquam eum ullam labore saepe ex ipsum voluptatem a, facere quibusdam corporis modi asperiores laborum odio omnis iste incidunt minima. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Facilis soluta assumenda totam,odio maxime eum? Velit facere fuga quidem odit nobis voluptates necessitatibus placeat bdignissimos rerum voluptatum, eos minus doloremque?
+    </p>
+</body>
+
+</html>
